@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2F87D81E289ADE0068370A /* Audio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F87D71E289ADE0068370A /* Audio.m4a */; };
 		2ADC6FB21DF923C4003C2452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC6FB11DF923C4003C2452 /* AppDelegate.swift */; };
 		2ADC6FB41DF923C4003C2452 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC6FB31DF923C4003C2452 /* ViewController.swift */; };
 		2ADC6FB71DF923C4003C2452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADC6FB51DF923C4003C2452 /* Main.storyboard */; };
 		2ADC6FB91DF923C4003C2452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADC6FB81DF923C4003C2452 /* Assets.xcassets */; };
 		2ADC6FBC1DF923C4003C2452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADC6FBA1DF923C4003C2452 /* LaunchScreen.storyboard */; };
+		2ADC6FC51DF927B5003C2452 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC6FC41DF927B5003C2452 /* CircleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A2F87D71E289ADE0068370A /* Audio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Audio.m4a; sourceTree = "<group>"; };
 		2ADC6FAE1DF923C4003C2452 /* Scribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADC6FB11DF923C4003C2452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ADC6FB31DF923C4003C2452 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		2ADC6FB81DF923C4003C2452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ADC6FBB1DF923C4003C2452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ADC6FBD1DF923C4003C2452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ADC6FC41DF927B5003C2452 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		2ADC6FB01DF923C4003C2452 /* Scribe */ = {
 			isa = PBXGroup;
 			children = (
+				2ADC6FC61DF927C3003C2452 /* Model */,
+				2ADC6FC31DF9276F003C2452 /* View */,
+				2ADC6FC71DF927CB003C2452 /* Controller */,
 				2ADC6FB11DF923C4003C2452 /* AppDelegate.swift */,
-				2ADC6FB31DF923C4003C2452 /* ViewController.swift */,
+				2A2F87D71E289ADE0068370A /* Audio.m4a */,
 				2ADC6FB51DF923C4003C2452 /* Main.storyboard */,
 				2ADC6FB81DF923C4003C2452 /* Assets.xcassets */,
 				2ADC6FBA1DF923C4003C2452 /* LaunchScreen.storyboard */,
 				2ADC6FBD1DF923C4003C2452 /* Info.plist */,
 			);
 			path = Scribe;
+			sourceTree = "<group>";
+		};
+		2ADC6FC31DF9276F003C2452 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2ADC6FC41DF927B5003C2452 /* CircleButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2ADC6FC61DF927C3003C2452 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2ADC6FC71DF927CB003C2452 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2ADC6FB31DF923C4003C2452 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +121,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Kimar;
 				TargetAttributes = {
 					2ADC6FAD1DF923C4003C2452 = {
@@ -127,6 +157,7 @@
 				2ADC6FBC1DF923C4003C2452 /* LaunchScreen.storyboard in Resources */,
 				2ADC6FB91DF923C4003C2452 /* Assets.xcassets in Resources */,
 				2ADC6FB71DF923C4003C2452 /* Main.storyboard in Resources */,
+				2A2F87D81E289ADE0068370A /* Audio.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ADC6FC51DF927B5003C2452 /* CircleButton.swift in Sources */,
 				2ADC6FB41DF923C4003C2452 /* ViewController.swift in Sources */,
 				2ADC6FB21DF923C4003C2452 /* AppDelegate.swift in Sources */,
 			);
@@ -182,6 +214,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +264,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -261,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 68P9D67JUK;
 				INFOPLIST_FILE = Scribe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.eng.kimar.Scribe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +309,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 68P9D67JUK;
 				INFOPLIST_FILE = Scribe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.eng.kimar.Scribe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +336,7 @@
 				2ADC6FC21DF923C4003C2452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

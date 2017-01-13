@@ -34,5 +34,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Audio analyze ans transcribe is neccesarry for ths function,please enable if you are confortable wth that</string>
 </dict>
 </plist>

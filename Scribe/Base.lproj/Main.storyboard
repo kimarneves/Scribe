@@ -1,26 +1,113 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Scribe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVe-56-T27">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCRIBE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NA-pp-28n">
+                                        <rect key="frame" x="122.5" y="13.5" width="75" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="IRd-F0-o1g"/>
+                                            <constraint firstAttribute="width" constant="75" id="f09-47-nbU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7NA-pp-28n" firstAttribute="centerX" secondItem="WVe-56-T27" secondAttribute="centerX" id="bha-FB-80H"/>
+                                    <constraint firstAttribute="height" constant="55" id="cfE-V5-U0r"/>
+                                    <constraint firstItem="7NA-pp-28n" firstAttribute="centerY" secondItem="WVe-56-T27" secondAttribute="centerY" id="pM8-GI-GxQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY &amp; TRANSCRIBE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eN-dm-vZZ">
+                                <rect key="frame" x="63" y="520" width="194.5" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="fxJ-xP-SHK"/>
+                                    <constraint firstAttribute="height" constant="28" id="yyG-bU-A9c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tap the button bellow to transcribe the audio embeded in this app" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CiM-vv-nZo">
+                                <rect key="frame" x="20" y="75" width="280" height="344"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="MU0-2x-Yl1">
+                                <rect key="frame" x="142" y="453" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xX8-wV-H6X" customClass="CircleButton" customModule="Scribe" customModuleProvider="target">
+                                <rect key="frame" x="128" y="439" width="64" height="64"/>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="4fK-lT-Ufg"/>
+                                    <constraint firstAttribute="height" constant="64" id="hAU-l4-sjV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wz4-jV-6HA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WVe-56-T27" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7WD-w4-Azs"/>
+                            <constraint firstItem="WVe-56-T27" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C5t-Dd-fph"/>
+                            <constraint firstItem="9eN-dm-vZZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CHD-sl-pjg"/>
+                            <constraint firstAttribute="trailing" secondItem="WVe-56-T27" secondAttribute="trailing" id="Cjk-Ti-FxX"/>
+                            <constraint firstAttribute="trailing" secondItem="CiM-vv-nZo" secondAttribute="trailing" constant="20" id="KHT-3J-lFN"/>
+                            <constraint firstItem="MU0-2x-Yl1" firstAttribute="centerY" secondItem="xX8-wV-H6X" secondAttribute="centerY" id="KfF-eG-yiT"/>
+                            <constraint firstItem="CiM-vv-nZo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Qkb-sY-x5m"/>
+                            <constraint firstItem="WVe-56-T27" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XXg-b6-acp"/>
+                            <constraint firstItem="WVe-56-T27" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bon-HS-Wly"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9eN-dm-vZZ" secondAttribute="bottom" constant="20" id="fBQ-Ls-RCN"/>
+                            <constraint firstItem="9eN-dm-vZZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="foW-XV-zWF"/>
+                            <constraint firstItem="9eN-dm-vZZ" firstAttribute="top" secondItem="xX8-wV-H6X" secondAttribute="bottom" constant="17" id="fqs-Ak-rcv"/>
+                            <constraint firstItem="xX8-wV-H6X" firstAttribute="top" secondItem="CiM-vv-nZo" secondAttribute="bottom" constant="20" id="hKa-Em-9fN"/>
+                            <constraint firstItem="CiM-vv-nZo" firstAttribute="top" secondItem="WVe-56-T27" secondAttribute="bottom" constant="20" id="jJO-K3-69O"/>
+                            <constraint firstItem="xX8-wV-H6X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="phd-mb-kzH"/>
+                            <constraint firstItem="MU0-2x-Yl1" firstAttribute="centerX" secondItem="xX8-wV-H6X" secondAttribute="centerX" id="qij-Tf-XCd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activitySpinner" destination="MU0-2x-Yl1" id="EIB-t5-iNA"/>
+                        <outlet property="tanscrptionTextField" destination="CiM-vv-nZo" id="Yfq-4d-kWS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
         </scene>
     </scenes>
 </document>
